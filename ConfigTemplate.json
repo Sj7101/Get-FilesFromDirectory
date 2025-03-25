@@ -1,0 +1,43 @@
+{
+  "FeedName": "FIGMA",
+  "FolderChecks": [
+    {
+      "CheckName": "DTSDownLoads",
+      "Paths": [
+        "\\UNC\D$\LLL"
+      ]
+    }
+  ],
+  "Queries": [
+    {
+      "QueryName": "DBImport",
+      "QueryFilePath": "$PSScriptRoot\SQLScripts\DBImport.sql"
+    },
+	{
+		"QueryName": "DBExport"
+		"QueryFilePath": "$PSScriptRoot\SQLScripts\DBExport"
+	}
+  ],
+  "OutputFolders": {
+    "HTMLReportFolder": "",
+    "JSONOutputFolder": "",
+    "SQLImportFolder": "",
+    "SQLExportFolder": ""
+  },
+  "Email": {
+    "To": [
+      ""
+    ],
+    "Subject": "",
+    "Description": "",
+    "FooterTextString": ""
+  },
+  "SQLIngest": {
+    "TargetServer": "",
+    "TargetDatabase": "",
+    "TargetTable": "",
+    "IngestFormat": "JSON",
+    "UseBulkInsert": false
+  }
+}
+		
