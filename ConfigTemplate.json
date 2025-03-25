@@ -10,17 +10,17 @@
   ],
   "LogFiles": [
     {
-      "LogName": "",
+      "LogName": "Ingestion Log",
       "Paths": [
-        ""
+        "C:\\Logs\\FMAD\\Ingest"
       ],
-      "FileFilter": "*.log",
-      "Patterns": [
-        "ERROR",
-        "EXCEPTION",
-        "TIMEOUT"
+      "FileNamePattern": "MyLog.log{{DATE}}.log",
+      "DateTokens": [
+        "yyyy_MM_dd_HH_mm_ss_tt",
+        "dd_MM_yyyy_HH_mm_ss_tt"
       ],
-      "MaxAgeDays": 7
+      "Patterns": [ "ERROR", "TIMEOUT" ],
+      "MaxAgeDays": 1
     }
   ],
   "Queries": [
