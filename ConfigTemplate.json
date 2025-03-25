@@ -21,7 +21,16 @@
       ],
       "Patterns": [ "ERROR", "TIMEOUT" ],
       "MaxAgeDays": 1
-    }
+    },
+	    {
+      "LogName": "Error Log",
+      "Paths": [
+        "C:\\Logs\\MyApp"
+      ],
+      "FileNamePattern": "AppError.log",
+      "Patterns": [ "CRITICAL", "FATAL" ],
+      "MaxAgeDays": 3
+    },
   ],
   "Queries": [
     {
