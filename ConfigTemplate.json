@@ -8,6 +8,21 @@
       ]
     }
   ],
+  "LogFiles": [
+    {
+      "LogName": "",
+      "Paths": [
+        ""
+      ],
+      "FileFilter": "*.log",
+      "Patterns": [
+        "ERROR",
+        "EXCEPTION",
+        "TIMEOUT"
+      ],
+      "MaxAgeDays": 7
+    }
+  ],
   "Queries": [
     {
       "QueryName": "DBImport",
@@ -17,7 +32,7 @@
 		"QueryName": "DBExport"
 		"QueryFilePath": "$PSScriptRoot\SQLScripts\DBExport"
 	}
-  ],
+  ],  
   "OutputFolders": {
     "HTMLReportFolder": "",
     "JSONOutputFolder": "",
